@@ -3,7 +3,7 @@ var ParseServer = require('parse-server').ParseServer;
 var ParseDashboard = require('parse-dashboard');
 var allowInsecureHTTP = false
 
-var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
+var databaseUri = 'mongodb://mclinica:mclinica@ds119210.mlab.com:19210/message-service';
 
 if (!databaseUri) {
 	console.log('DATABASE_URI not specified, falling back to localhost.');
